@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать игру"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжительность игры (сек):"
+        android:layout_below="@id/btnStartGame"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:layout_below="@id/textDuration"/>
+
+    <TextView
+        android:id="@+id/textActiveDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжительность активности (мс):"
+        android:layout_below="@id/seekBarDuration"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarActiveDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3000"
+        android:layout_below="@id/textActiveDuration"/>
+
+</RelativeLayout>
